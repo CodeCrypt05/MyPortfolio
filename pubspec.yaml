@@ -38,6 +38,8 @@ dependencies:
   responsive_builder: ^0.7.0
   hexcolor: ^3.0.1
   stroke_text: ^0.0.2
+  animated_text_kit: ^4.2.2
+  widget_and_text_animator: ^1.1.5
 
 dev_dependencies:
   flutter_test:
@@ -72,6 +74,9 @@ flutter:
     - assets/gif/robot.gif
 
     - assets/images/main_poster_img.png
+    - assets/images/astronaut_dab_img.png
+
+    - assets/images/background_1.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware

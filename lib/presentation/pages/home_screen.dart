@@ -20,7 +20,11 @@ class _HomeScreenState extends State<HomeScreen> {
       backgroundColor: HexColor("#050507"),
       body: SingleChildScrollView(
         child: Container(
-          child: Column(
+          decoration: BoxDecoration(
+              image: DecorationImage(
+                  image: AssetImage('assets/images/background_1.png'),
+                  fit: BoxFit.fill)),
+          child: const Column(
             children: [
               NavBar(),
               HomeContainer(),
