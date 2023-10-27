@@ -81,6 +81,7 @@ flutter:
     - assets/images/project_1.png
     - assets/images/project_2.png
     - assets/images/project_3.png
+    - assets/images/forrword_arrow.png
 
     - assets/programming_icons/adobexd.png
     - assets/programming_icons/c.png
@@ -120,7 +121,7 @@ flutter:
 
     - family: gfs_neohellenic_bold
       fonts:
-        - asset: assets/fonts/GFSNeohellenic-Regular.ttf
+        - asset: assets/fonts/GFSNeohellenic-Bold.ttf
 
   #
   # For details regarding fonts from package dependencies,

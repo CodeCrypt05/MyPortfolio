@@ -19,6 +19,7 @@ const String mobile_bottom_nav_stro =
 const String project1 = "assets/images/project_1.png";
 const String project2 = "assets/images/project_2.png";
 const String project3 = "assets/images/project_3.png";
+const String forrword_arrow = "assets/images/forrword_arrow.png";
 
 /* Programmin Icons */
 
@@ -35,3 +36,14 @@ const String html = "assets/programming_icons/html5.png";
 const String java = "assets/programming_icons/java.png";
 const String mysql = "assets/programming_icons/mysql.png";
 const String postman = "assets/programming_icons/postman.png";
+
+//About me content
+
+const String introduction =
+    "Hi there, My name is Vaibhav, I am a Software engineer.";
+
+const String first_para =
+    "My journey as a Flutter developer is just beginning, and I'm excited to explore new horizons and learn the ropes of this dynamic field. I'm a quick learner, always eager to embrace new challenges and adapt to the latest technologies. With a strong educational background, I'm committed to continuous growth and evolution in this ever-evolving industry.";
+
+const String sec_para =
+    ''' I hold a Bachelor's degree in Computer Engineering, and my aspirations in this field are boundless. As a newcomer, I'm open to exciting job opportunities, connections with industry experts, and, most importantly, I'm here to learn, grow, and explore career opportunities in this exciting field. Don't hesitate to reach out and connect with me; I'm approachable and eager to contribute to the ever-expanding world of Flutter development. Rest assured, I'm here to learn and grow, and I'm definitely open to saying hello!''';

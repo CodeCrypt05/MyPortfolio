@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:hexcolor/hexcolor.dart';
+import 'package:my_portfolio/presentation/pages/containers/about/about.dart';
 import 'package:my_portfolio/presentation/pages/containers/container_1.dart';
 import 'package:my_portfolio/presentation/pages/containers/container_2.dart';
 import 'package:my_portfolio/presentation/pages/containers/container_3.dart';
@@ -32,6 +33,7 @@ class _HomeScreenState extends State<HomeScreen> {
               Container1(),
               Container2(),
               Container3(),
+              About(),
             ],
           ),
         ),

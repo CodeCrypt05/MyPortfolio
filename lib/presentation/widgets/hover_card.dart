@@ -22,7 +22,7 @@ class _HoverCardState extends State<HoverCard> {
       onHover: (e) {
         setState(() {
           mousPos += e.delta;
-          mousPos += 0.12 as Offset;
+          // mousPos += 0.12 as Offset;
         });
       },
       onExit: (e) {
