@@ -1,3 +1,5 @@
+// ignore_for_file: avoid_unnecessary_containers
+
 import 'dart:ui';
 
 import 'package:flutter/material.dart';
@@ -1030,68 +1032,64 @@ class _Container2State extends State<Container2> {
                             ),
                             const SizedBox(height: 38),
                             //  row 2
-                            Container(
-                              // color: Colors.red,
-                              child: Row(
-                                mainAxisAlignment:
-                                    MainAxisAlignment.spaceEvenly,
-                                children: [
-                                  Column(
-                                    children: [
-                                      Image.asset(
-                                        postman,
-                                        fit: BoxFit.fill,
-                                        height: 40,
-                                        width: 40,
-                                      ),
-                                      const SizedBox(height: 8),
-                                      const Text(
-                                        'Postman',
-                                        style: TextStyle(
-                                            fontSize: 14,
-                                            fontWeight: FontWeight.w300,
-                                            color: Colors.white),
-                                      )
-                                    ],
-                                  ),
-                                  Column(
-                                    children: [
-                                      Image.asset(
-                                        figma,
-                                        fit: BoxFit.fill,
-                                        height: 40,
-                                        width: 34,
-                                      ),
-                                      const SizedBox(height: 8),
-                                      const Text(
-                                        'Figma',
-                                        style: TextStyle(
-                                            fontSize: 14,
-                                            fontWeight: FontWeight.w300,
-                                            color: Colors.white),
-                                      )
-                                    ],
-                                  ),
-                                  Column(
-                                    children: [
-                                      Image.asset(
-                                        adobeXd,
-                                        fit: BoxFit.fill,
-                                        height: 40,
-                                        width: 40,
-                                      ),
-                                      const SizedBox(height: 8),
-                                      const Text(
-                                        'AdobeXD',
-                                        style: TextStyle(
-                                            fontSize: 14,
-                                            fontWeight: FontWeight.w300,
-                                            color: Colors.white),
-                                      )
-                                    ],
-                                  ),
-                                ],
-                              ),
+                            Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                              children: [
+                                Column(
+                                  children: [
+                                    Image.asset(
+                                      postman,
+                                      fit: BoxFit.fill,
+                                      height: 40,
+                                      width: 40,
+                                    ),
+                                    const SizedBox(height: 8),
+                                    const Text(
+                                      'Postman',
+                                      style: TextStyle(
+                                          fontSize: 14,
+                                          fontWeight: FontWeight.w300,
+                                          color: Colors.white),
+                                    )
+                                  ],
+                                ),
+                                Column(
+                                  children: [
+                                    Image.asset(
+                                      figma,
+                                      fit: BoxFit.fill,
+                                      height: 40,
+                                      width: 34,
+                                    ),
+                                    const SizedBox(height: 8),
+                                    const Text(
+                                      'Figma',
+                                      style: TextStyle(
+                                          fontSize: 14,
+                                          fontWeight: FontWeight.w300,
+                                          color: Colors.white),
+                                    )
+                                  ],
+                                ),
+                                Column(
+                                  children: [
+                                    Image.asset(
+                                      adobeXd,
+                                      fit: BoxFit.fill,
+                                      height: 40,
+                                      width: 40,
+                                    ),
+                                    const SizedBox(height: 8),
+                                    const Text(
+                                      'AdobeXD',
+                                      style: TextStyle(
+                                          fontSize: 14,
+                                          fontWeight: FontWeight.w300,
+                                          color: Colors.white),
+                                    )
+                                  ],
+                                ),
+                              ],
                             ),
                             const SizedBox(height: 18),
                           ],

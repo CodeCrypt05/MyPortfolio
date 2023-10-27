@@ -1,5 +1,8 @@
+// ignore_for_file: non_constant_identifier_names
+
 import 'package:flutter/material.dart';
 import 'package:my_portfolio/presentation/utils/constants.dart';
+
 import 'package:responsive_builder/responsive_builder.dart';
 
 class NavBar extends StatefulWidget {
@@ -19,15 +22,16 @@ class _NavBarState extends State<NavBar> {
     );
   }
 
+/*============ MOBILE VIEW =============== */
   Widget MobileNavBar() {
     return Container(
-      margin: EdgeInsets.symmetric(horizontal: 80),
+      margin: const EdgeInsets.symmetric(horizontal: 80),
       height: 70,
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
           navMobileLogo(),
-          Icon(
+          const Icon(
             Icons.menu,
             color: Colors.white,
           ),
@@ -49,11 +53,11 @@ class _NavBarState extends State<NavBar> {
     );
   }
 
-  // Tablet Navigation Buttons
+  // Tablet Navigation Buttons  //
 
   Widget TabletNavBAr() {
     return Container(
-      margin: EdgeInsets.only(left: 50, right: 50, top: 30),
+      margin: const EdgeInsets.only(left: 50, right: 50, top: 30),
       height: 70,
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -62,13 +66,13 @@ class _NavBarState extends State<NavBar> {
           Row(
             children: [
               navTabButton('Home'),
-              SizedBox(width: 14),
+              const SizedBox(width: 14),
               navTabButton('Work'),
-              SizedBox(width: 14),
+              const SizedBox(width: 14),
               navTabButton('About'),
-              SizedBox(width: 14),
+              const SizedBox(width: 14),
               navTabButton('Contact'),
-              SizedBox(width: 14),
+              const SizedBox(width: 14),
             ],
           ),
         ],
@@ -77,20 +81,18 @@ class _NavBarState extends State<NavBar> {
   }
 
   Widget navTabButton(String text) {
-    return Container(
-      child: TextButton(
-          onPressed: () {},
-          child: Text(
-            text,
-            style: const TextStyle(
-              color: Colors.white,
-              fontFamily: 'geo',
-              fontSize: 24,
-              fontWeight: FontWeight.w900,
-              letterSpacing: 0.8,
-            ),
-          )),
-    );
+    return TextButton(
+        onPressed: () {},
+        child: Text(
+          text,
+          style: const TextStyle(
+            color: Colors.white,
+            fontFamily: 'geo',
+            fontSize: 24,
+            fontWeight: FontWeight.w900,
+            letterSpacing: 0.8,
+          ),
+        ));
   }
 
   // MainLogo for tablet
@@ -106,11 +108,11 @@ class _NavBarState extends State<NavBar> {
     );
   }
 
-  // Desktop navigation buttons
+  // Desktop navigation buttons ////////////////////////////////////
 
   Widget DeskTopNavBAr() {
     return Container(
-      margin: EdgeInsets.only(left: 90, right: 90, top: 60),
+      margin: const EdgeInsets.only(left: 90, right: 90, top: 60),
       height: 70,
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -119,13 +121,13 @@ class _NavBarState extends State<NavBar> {
           Row(
             children: [
               navDeskButton('Home'),
-              SizedBox(width: 40),
+              const SizedBox(width: 40),
               navDeskButton('Work'),
-              SizedBox(width: 40),
+              const SizedBox(width: 40),
               navDeskButton('About'),
-              SizedBox(width: 40),
+              const SizedBox(width: 40),
               navDeskButton('Contact'),
-              SizedBox(width: 40),
+              const SizedBox(width: 40),
             ],
           ),
         ],
@@ -134,20 +136,18 @@ class _NavBarState extends State<NavBar> {
   }
 
   Widget navDeskButton(String text) {
-    return Container(
-      child: TextButton(
-          onPressed: () {},
-          child: Text(
-            text,
-            style: const TextStyle(
-              color: Colors.white,
-              fontFamily: 'geo',
-              fontSize: 30,
-              fontWeight: FontWeight.w900,
-              letterSpacing: 2,
-            ),
-          )),
-    );
+    return TextButton(
+        onPressed: () {},
+        child: Text(
+          text,
+          style: const TextStyle(
+            color: Colors.white,
+            fontFamily: 'geo',
+            fontSize: 30,
+            fontWeight: FontWeight.w900,
+            letterSpacing: 2,
+          ),
+        ));
   }
 
   // MAinLogo for desktop

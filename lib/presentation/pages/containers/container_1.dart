@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:my_portfolio/presentation/utils/constants.dart';
+import 'package:my_portfolio/presentation/widgets/on_hover.dart';
 import 'package:responsive_builder/responsive_builder.dart';
 import 'package:stroke_text/stroke_text.dart';
 
@@ -109,7 +110,7 @@ class _Container1State extends State<Container1> {
           /*second line of introduction*/
           /* Text Stroke Effect */
           Container(
-            margin: EdgeInsets.only(top: 12),
+            margin: const EdgeInsets.only(top: 12),
             child: StrokeText(
               text: 'Vaibhav.',
               textStyle: TextStyle(
@@ -210,50 +211,48 @@ class _Container1State extends State<Container1> {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               // first line of introduction
-              Container(
-                child: Row(
-                  children: [
-                    Text(
-                      'Hi!',
-                      style: TextStyle(
-                        height: 0.08,
-                        fontSize: w! / 20,
-                        fontFamily: "geo",
-                        color: Colors.white,
-                        letterSpacing: 0.4,
-                        fontWeight: FontWeight.w600,
+              Row(
+                children: [
+                  Text(
+                    'Hi!',
+                    style: TextStyle(
+                      height: 0.08,
+                      fontSize: w! / 20,
+                      fontFamily: "geo",
+                      color: Colors.white,
+                      letterSpacing: 0.4,
+                      fontWeight: FontWeight.w600,
+                    ),
+                  ),
+                  const SizedBox(width: 8),
+                  Container(
+                    margin: const EdgeInsets.only(bottom: 18),
+                    width: w! / 18,
+                    height: 64,
+                    decoration: const BoxDecoration(
+                      image: DecorationImage(
+                        image: AssetImage("assets/gif/waving_hand.gif"),
+                        fit: BoxFit.contain,
                       ),
                     ),
-                    const SizedBox(width: 8),
-                    Container(
-                      margin: const EdgeInsets.only(bottom: 18),
-                      width: w! / 18,
-                      height: 64,
-                      decoration: const BoxDecoration(
-                        image: DecorationImage(
-                          image: AssetImage("assets/gif/waving_hand.gif"),
-                          fit: BoxFit.contain,
-                        ),
-                      ),
+                  ),
+                  const SizedBox(width: 8),
+                  Text(
+                    "I'm",
+                    style: TextStyle(
+                      fontSize: w! / 20,
+                      fontFamily: "geo",
+                      color: Colors.white,
+                      letterSpacing: 0.4,
+                      fontWeight: FontWeight.w600,
                     ),
-                    const SizedBox(width: 8),
-                    Text(
-                      "I'm",
-                      style: TextStyle(
-                        fontSize: w! / 20,
-                        fontFamily: "geo",
-                        color: Colors.white,
-                        letterSpacing: 0.4,
-                        fontWeight: FontWeight.w600,
-                      ),
-                    ),
-                  ],
-                ),
+                  ),
+                ],
               ),
               /*second line of introduction*/
               /* Text Stroke Effect */
               Container(
-                margin: EdgeInsets.only(left: 2),
+                margin: const EdgeInsets.only(left: 2),
                 child: StrokeText(
                   text: 'Vaibhav.',
                   textStyle: TextStyle(
@@ -420,7 +419,7 @@ class _Container1State extends State<Container1> {
 
               /* Text Stroke Effect */
               Container(
-                margin: EdgeInsets.only(left: 4),
+                margin: const EdgeInsets.only(left: 4),
                 child: StrokeText(
                   text: 'Vaibhav.',
                   textStyle: TextStyle(

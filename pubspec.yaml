@@ -42,6 +42,8 @@ dependencies:
   widget_and_text_animator: ^1.1.5
   motion: ^1.4.0
   glassmorphism: ^3.0.0
+  hovering: ^1.0.4
+  provider: ^6.0.5
 
 dev_dependencies:
   flutter_test:
@@ -82,6 +84,10 @@ flutter:
     - assets/images/project_2.png
     - assets/images/project_3.png
     - assets/images/forrword_arrow.png
+    - assets/images/instagram_ic.png
+    - assets/images/linkdin_ic.png
+    - assets/images/full_background.png
+
 
     - assets/programming_icons/adobexd.png
     - assets/programming_icons/c.png
@@ -96,6 +102,8 @@ flutter:
     - assets/programming_icons/java.png
     - assets/programming_icons/mysql.png
     - assets/programming_icons/postman.png
+
+
 
 
   # An image asset can refer to one or more resolution-specific "variants", see

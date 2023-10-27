@@ -10,7 +10,7 @@ class HoverCard extends StatefulWidget {
 
 class _HoverCardState extends State<HoverCard> {
   bool isHover = false;
-  Offset mousPos = new Offset(0, 0);
+  Offset mousPos = const Offset(0, 0);
   @override
   Widget build(BuildContext context) {
     return MouseRegion(
@@ -30,10 +30,8 @@ class _HoverCardState extends State<HoverCard> {
           isHover = false;
         });
       },
-      child: Container(
-        child: Stack(
-          children: [backImage()],
-        ),
+      child: Stack(
+        children: [backImage()],
       ),
     );
   }
