@@ -2,6 +2,8 @@
 
 import 'package:flutter/material.dart';
 import 'package:my_portfolio/presentation/utils/constants.dart';
+import 'package:my_portfolio/provider/scroll_provider.dart';
+import 'package:provider/provider.dart';
 
 import 'package:responsive_builder/responsive_builder.dart';
 
@@ -13,6 +15,19 @@ class NavBar extends StatefulWidget {
 }
 
 class _NavBarState extends State<NavBar> {
+  int getIndex(String index) {
+    if (index == "Home") {
+      return 0;
+    } else if (index == "Work") {
+      return 1;
+    } else if (index == "About") {
+      return 2;
+    } else if (index == "Connect") {
+      return 3;
+    }
+    return 0;
+  }
+
   @override
   Widget build(BuildContext context) {
     return ScreenTypeLayout.builder(
@@ -136,18 +151,30 @@ class _NavBarState extends State<NavBar> {
   }
 
   Widget navDeskButton(String text) {
+    final index = Provider.of<ScrollProvider>(context);
     return TextButton(
-        onPressed: () {},
-        child: Text(
-          text,
-          style: const TextStyle(
-            color: Colors.white,
-            fontFamily: 'geo',
-            fontSize: 30,
-            fontWeight: FontWeight.w900,
-            letterSpacing: 2,
-          ),
-        ));
+      onPressed: () {
+        if (text == "Home") {
+          index.setInt(0);
+        } else if (text == "Work") {
+          index.setInt(1);
+        } else if (text == "About") {
+          index.setInt(2);
+        } else if (text == "Connect") {
+          index.setInt(3);
+        }
+      },
+      child: Text(
+        text,
+        style: const TextStyle(
+          color: Colors.white,
+          fontFamily: 'geo',
+          fontSize: 30,
+          fontWeight: FontWeight.w900,
+          letterSpacing: 2,
+        ),
+      ),
+    );
   }
 
   // MAinLogo for desktop

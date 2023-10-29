@@ -6,6 +6,8 @@ import 'package:my_portfolio/presentation/pages/containers/container_2.dart';
 import 'package:my_portfolio/presentation/pages/containers/work/work.dart';
 import 'package:my_portfolio/presentation/utils/constants.dart';
 import 'package:my_portfolio/presentation/widgets/navbar.dart';
+import 'package:my_portfolio/provider/scroll_provider.dart';
+import 'package:provider/provider.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -15,6 +17,8 @@ class HomeScreen extends StatefulWidget {
 }
 
 class _HomeScreenState extends State<HomeScreen> {
+  final ScrollController _scrollController = ScrollController();
+
   @override
   Widget build(BuildContext context) {
     w = MediaQuery.of(context).size.width;
@@ -22,6 +26,7 @@ class _HomeScreenState extends State<HomeScreen> {
     return Scaffold(
       backgroundColor: Colors.black,
       body: SingleChildScrollView(
+        controller: _scrollController,
         child: Container(
           decoration: const BoxDecoration(
             image: DecorationImage(
@@ -29,7 +34,7 @@ class _HomeScreenState extends State<HomeScreen> {
               fit: BoxFit.fill,
             ),
           ),
-          child: const Column(
+          child: Column(
             children: [
               NavBar(),
               Container1(),
