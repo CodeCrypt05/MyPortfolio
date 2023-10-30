@@ -78,7 +78,6 @@ flutter:
     - assets/gif/robot.gif
 
     - assets/images/astronaut_dab_img.png
-    - assets/images/background_1.png
     - assets/images/bottom_nav_astronaut.png
     - assets/images/main_logo.png
     - assets/images/main_poster_img.png
@@ -89,7 +88,8 @@ flutter:
     - assets/images/forrword_arrow.png
     - assets/images/instagram_ic.png
     - assets/images/linkdin_ic.png
-    - assets/images/full_background.png
+
+    - assets/images/star.jpg
 
 
     - assets/programming_icons/adobexd.png

@@ -113,7 +113,7 @@ class _NavBarState extends State<NavBar> {
               const SizedBox(width: 14),
               navTabButton('About'),
               const SizedBox(width: 14),
-              navTabButton('Contact'),
+              navTabButton('Connect'),
               const SizedBox(width: 14),
             ],
           ),
@@ -133,7 +133,7 @@ class _NavBarState extends State<NavBar> {
               value.setInt(1);
             } else if (text == "About") {
               value.setInt(2);
-            } else if (text == "Contact") {
+            } else if (text == "Connect") {
               value.setInt(3);
             }
           },
@@ -183,7 +183,7 @@ class _NavBarState extends State<NavBar> {
               const SizedBox(width: 40),
               navDeskButton('About'),
               const SizedBox(width: 40),
-              navDeskButton('Contact'),
+              navDeskButton('Connect'),
               const SizedBox(width: 40),
             ],
           ),
@@ -203,7 +203,7 @@ class _NavBarState extends State<NavBar> {
               value.setInt(1);
             } else if (text == "About") {
               value.setInt(2);
-            } else if (text == "Contact") {
+            } else if (text == "Connect") {
               value.setInt(3);
             }
           },

@@ -10,8 +10,8 @@ class Work extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ScreenTypeLayout.builder(
-      mobile: (BuildContext context) => const WorkMobile(),
-      tablet: (BuildContext context) => const WorkTablet(),
+      mobile: (BuildContext context) => WorkMobile(),
+      tablet: (BuildContext context) => WorkTablet(),
       desktop: (BuildContext context) => WorkDesktop(),
     );
   }

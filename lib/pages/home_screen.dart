@@ -24,6 +24,8 @@ class _HomeScreenState extends State<HomeScreen> {
   final GlobalKey aboutKey = GlobalKey();
   final GlobalKey contactKey = GlobalKey();
 
+  GlobalKey scrollKey = GlobalKey();
+
   void _scrollToIndex(int index) {
     double position = 0.0;
     switch (index) {
@@ -52,7 +54,7 @@ class _HomeScreenState extends State<HomeScreen> {
     if (position > 0) {
       _scrollController.animateTo(
         position,
-        duration: Duration(milliseconds: 1000),
+        duration: const Duration(milliseconds: 1000),
         curve: Curves.ease,
       );
     }
@@ -77,17 +79,26 @@ class _HomeScreenState extends State<HomeScreen> {
     return Scaffold(
       backgroundColor: Colors.black,
       body: SingleChildScrollView(
-        physics: AlwaysScrollableScrollPhysics(),
+        key: scrollKey,
+        physics: const AlwaysScrollableScrollPhysics(),
         controller: _scrollController,
-        child: Column(
-          children: [
-            const NavBar(),
-            HomeContainer(key: container1Key),
-            SkillsContainer(key: container2Key),
-            Work(key: workKey),
-            About(key: aboutKey),
-            Contact(key: contactKey)
-          ],
+        child: Container(
+          decoration: const BoxDecoration(
+            image: DecorationImage(
+              image: AssetImage("assets/images/star.jpg"),
+              fit: BoxFit.cover,
+            ),
+          ),
+          child: Column(
+            children: [
+              const NavBar(),
+              HomeContainer(key: container1Key),
+              SkillsContainer(key: container2Key),
+              Work(key: workKey),
+              About(key: aboutKey),
+              Contact(key: contactKey)
+            ],
+          ),
         ),
       ),
     );

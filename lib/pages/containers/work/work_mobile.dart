@@ -1,9 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:my_portfolio/functions/launch_url.dart';
 import 'package:my_portfolio/utils/constants.dart';
 import 'package:my_portfolio/widgets/hover_card.dart';
 
 class WorkMobile extends StatelessWidget {
-  const WorkMobile({super.key});
+  WorkMobile({super.key});
+
+  final LaunchURL url = LaunchURL();
 
   @override
   Widget build(BuildContext context) {
@@ -69,7 +72,9 @@ class WorkMobile extends StatelessWidget {
               borderRadius: BorderRadius.circular(8),
             ),
           ),
-          onPressed: () {},
+          onPressed: () {
+            url.launchURL(Uri.parse(chatAppProject));
+          },
           icon: Image.asset(
             github,
             fit: BoxFit.fill,
@@ -126,7 +131,9 @@ class WorkMobile extends StatelessWidget {
               borderRadius: BorderRadius.circular(8),
             ),
           ),
-          onPressed: () {},
+          onPressed: () {
+            url.launchURL(Uri.parse(wallpaerAppProject));
+          },
           icon: Image.asset(
             github,
             fit: BoxFit.fill,
@@ -183,7 +190,9 @@ class WorkMobile extends StatelessWidget {
               borderRadius: BorderRadius.circular(8),
             ),
           ),
-          onPressed: () {},
+          onPressed: () {
+            url.launchURL(Uri.parse(healthAppProject));
+          },
           icon: Image.asset(
             github,
             fit: BoxFit.fill,
@@ -205,7 +214,9 @@ class WorkMobile extends StatelessWidget {
           height: 20,
         ),
         GestureDetector(
-          onTap: () {},
+          onTap: () {
+            url.launchURL(Uri.parse(githubURL));
+          },
           child: Text(
             'MORE >>',
             style: TextStyle(

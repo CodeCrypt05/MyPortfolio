@@ -12,7 +12,7 @@ const cardBorderRadius = BorderRadius.all(Radius.circular(24));
 const String logo = 'assets/images/main_logo.png';
 const String astronout_earth_illustration = 'assets/images/main_poster_img.png';
 const String astronaut_dab_illustration = 'assets/images/astronaut_dab_img.png';
-const String background_star_img = "assets/images/background_1.png";
+const String background_star_img = 'assets/images/background_1.png';
 const String bottom_nav_astro = "assets/images/bottom_nav_astronaut.png";
 const String mobile_bottom_nav_stro =
     "assets/images/mobile_bottom_nav_astro.png";
@@ -23,6 +23,10 @@ const String forrword_arrow = "assets/images/forrword_arrow.png";
 
 const String instagra_ic = "assets/images/instagram_ic.png";
 const String linkdin_ic = "assets/images/linkdin_ic.png";
+
+const String fullBackground = 'assets/images/full_background.png';
+
+const String fullbackground = "assets/images/full_background.svg";
 
 /* Programmin Icons */
 
