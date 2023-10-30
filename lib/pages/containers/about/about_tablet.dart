@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
-import 'package:my_portfolio/presentation/utils/constants.dart';
+import 'package:my_portfolio/utils/constants.dart';
 
-class AboutMobile extends StatelessWidget {
-  const AboutMobile({super.key});
+class AboutTablet extends StatelessWidget {
+  const AboutTablet({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: const EdgeInsets.only(left: 26, right: 26),
+      margin: const EdgeInsets.only(left: 60, right: 60, top: 16),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
@@ -40,7 +40,7 @@ class AboutMobile extends StatelessWidget {
                 textAlign: TextAlign.center,
                 style: TextStyle(
                   height: 1,
-                  fontSize: w! / 38,
+                  fontSize: w! / 58,
                   fontFamily: "gfs_neohellenic_bold",
                   color: Colors.white,
                 ),
@@ -51,7 +51,7 @@ class AboutMobile extends StatelessWidget {
                 textAlign: TextAlign.center,
                 style: TextStyle(
                   height: 1,
-                  fontSize: w! / 38,
+                  fontSize: w! / 58,
                   fontFamily: "gfs_neohellenic_bold",
                   color: Colors.white,
                 ),
@@ -62,7 +62,7 @@ class AboutMobile extends StatelessWidget {
                 textAlign: TextAlign.center,
                 style: TextStyle(
                   height: 1,
-                  fontSize: w! / 38,
+                  fontSize: w! / 58,
                   fontFamily: "gfs_neohellenic_bold",
                   color: Colors.white,
                 ),
@@ -87,7 +87,7 @@ class AboutMobile extends StatelessWidget {
                   textAlign: TextAlign.start,
                   style: TextStyle(
                     height: 2,
-                    fontSize: w! / 24,
+                    fontSize: w! / 44,
                     fontFamily: "geo",
                     fontWeight: FontWeight.w200,
                     color: const Color.fromARGB(255, 255, 255, 255),
@@ -97,8 +97,8 @@ class AboutMobile extends StatelessWidget {
                 Image.asset(
                   forrword_arrow,
                   fit: BoxFit.fill,
-                  height: 18,
-                  width: 18,
+                  height: 24,
+                  width: 24,
                 ),
               ],
             ),

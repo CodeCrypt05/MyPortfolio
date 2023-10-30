@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:my_portfolio/presentation/utils/constants.dart';
-import 'package:my_portfolio/presentation/widgets/hover_card.dart';
+import 'package:my_portfolio/utils/constants.dart';
+import 'package:my_portfolio/widgets/hover_card.dart';
 
 class WorkMobile extends StatelessWidget {
   const WorkMobile({super.key});
@@ -8,7 +8,7 @@ class WorkMobile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: const EdgeInsets.only(left: 60, right: 60, top: 20),
+      margin: const EdgeInsets.only(left: 60, right: 60, top: 30),
       padding: const EdgeInsets.only(left: 14, right: 14),
       child: Column(mainAxisAlignment: MainAxisAlignment.center, children: [
         Text(

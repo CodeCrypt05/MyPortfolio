@@ -1,17 +1,16 @@
 import 'package:flutter/material.dart';
-import 'package:my_portfolio/presentation/utils/constants.dart';
-import 'package:my_portfolio/presentation/widgets/on_hover.dart';
+import 'package:my_portfolio/utils/constants.dart';
 import 'package:responsive_builder/responsive_builder.dart';
 import 'package:stroke_text/stroke_text.dart';
 
-class Container1 extends StatefulWidget {
-  const Container1({super.key});
+class HomeContainer extends StatefulWidget {
+  const HomeContainer({super.key});
 
   @override
-  State<Container1> createState() => _Container1State();
+  State<HomeContainer> createState() => _HomeContainerState();
 }
 
-class _Container1State extends State<Container1> {
+class _HomeContainerState extends State<HomeContainer> {
   double _verticalOffset = 0.0;
   bool _goingUp = true;
 
@@ -55,14 +54,14 @@ class _Container1State extends State<Container1> {
   @override
   Widget build(BuildContext context) {
     return ScreenTypeLayout.builder(
-      mobile: (BuildContext context) => mobileContainer1(),
-      tablet: (BuildContext context) => tabletContainer1(),
-      desktop: (BuildContext context) => desktopContainer1(),
+      mobile: (BuildContext context) => mobileHomeContainer(),
+      tablet: (BuildContext context) => tabletHomeContainer(),
+      desktop: (BuildContext context) => desktopHomeContainer(),
     );
   }
 
   /*========== Mobile View ============*/
-  Widget mobileContainer1() {
+  Widget mobileHomeContainer() {
     return Container(
       margin: const EdgeInsets.only(left: 60, right: 60, top: 10),
       child: Column(
@@ -201,7 +200,7 @@ class _Container1State extends State<Container1> {
   }
 
   /*====== Tablet View =========*/
-  Widget tabletContainer1() {
+  Widget tabletHomeContainer() {
     return Container(
       margin: const EdgeInsets.only(left: 90, right: 90, top: 40),
       child: Row(
@@ -346,7 +345,7 @@ class _Container1State extends State<Container1> {
   }
 
   /*====== Desktop View ==========*/
-  Widget desktopContainer1() {
+  Widget desktopHomeContainer() {
     return Container(
       margin: const EdgeInsets.only(left: 160, right: 160, top: 40),
       child: Row(

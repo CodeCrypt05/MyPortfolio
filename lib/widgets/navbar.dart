@@ -1,7 +1,7 @@
 // ignore_for_file: non_constant_identifier_names
 
 import 'package:flutter/material.dart';
-import 'package:my_portfolio/presentation/utils/constants.dart';
+import 'package:my_portfolio/utils/constants.dart';
 import 'package:my_portfolio/provider/scroll_provider.dart';
 import 'package:provider/provider.dart';
 
@@ -15,19 +15,6 @@ class NavBar extends StatefulWidget {
 }
 
 class _NavBarState extends State<NavBar> {
-  int getIndex(String index) {
-    if (index == "Home") {
-      return 0;
-    } else if (index == "Work") {
-      return 1;
-    } else if (index == "About") {
-      return 2;
-    } else if (index == "Connect") {
-      return 3;
-    }
-    return 0;
-  }
-
   @override
   Widget build(BuildContext context) {
     return ScreenTypeLayout.builder(
@@ -46,9 +33,49 @@ class _NavBarState extends State<NavBar> {
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
           navMobileLogo(),
-          const Icon(
-            Icons.menu,
-            color: Colors.white,
+          InkWell(
+            onTap: () {},
+            child: const Icon(
+              Icons.menu,
+              color: Colors.white,
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+
+  Widget navDrawer() {
+    return Drawer(
+      child: ListView(
+        children: [
+          ListTile(
+            title: Text("Home"),
+            onTap: () {
+              // Handle the Home option here, e.g., navigate to the Home screen.
+              Navigator.pop(context); // Close the drawer
+            },
+          ),
+          ListTile(
+            title: Text("Work"),
+            onTap: () {
+              // Handle the Work option here.
+              Navigator.pop(context); // Close the drawer
+            },
+          ),
+          ListTile(
+            title: Text("About"),
+            onTap: () {
+              // Handle the About option here.
+              Navigator.pop(context); // Close the drawer
+            },
+          ),
+          ListTile(
+            title: Text("Contact"),
+            onTap: () {
+              // Handle the Contact option here.
+              Navigator.pop(context); // Close the drawer
+            },
           ),
         ],
       ),
@@ -96,18 +123,33 @@ class _NavBarState extends State<NavBar> {
   }
 
   Widget navTabButton(String text) {
-    return TextButton(
-        onPressed: () {},
-        child: Text(
-          text,
-          style: const TextStyle(
-            color: Colors.white,
-            fontFamily: 'geo',
-            fontSize: 24,
-            fontWeight: FontWeight.w900,
-            letterSpacing: 0.8,
+    return Consumer<ScrollProvider>(
+      builder: (BuildContext context, value, Widget? child) {
+        return TextButton(
+          onPressed: () {
+            if (text == "Home") {
+              value.setInt(0);
+            } else if (text == "Work") {
+              value.setInt(1);
+            } else if (text == "About") {
+              value.setInt(2);
+            } else if (text == "Contact") {
+              value.setInt(3);
+            }
+          },
+          child: Text(
+            text,
+            style: const TextStyle(
+              color: Colors.white,
+              fontFamily: 'geo',
+              fontSize: 24,
+              fontWeight: FontWeight.w900,
+              letterSpacing: 0.8,
+            ),
           ),
-        ));
+        );
+      },
+    );
   }
 
   // MainLogo for tablet
@@ -151,29 +193,32 @@ class _NavBarState extends State<NavBar> {
   }
 
   Widget navDeskButton(String text) {
-    final index = Provider.of<ScrollProvider>(context);
-    return TextButton(
-      onPressed: () {
-        if (text == "Home") {
-          index.setInt(0);
-        } else if (text == "Work") {
-          index.setInt(1);
-        } else if (text == "About") {
-          index.setInt(2);
-        } else if (text == "Connect") {
-          index.setInt(3);
-        }
+    return Consumer<ScrollProvider>(
+      builder: (BuildContext context, value, Widget? child) {
+        return TextButton(
+          onPressed: () {
+            if (text == "Home") {
+              value.setInt(0);
+            } else if (text == "Work") {
+              value.setInt(1);
+            } else if (text == "About") {
+              value.setInt(2);
+            } else if (text == "Contact") {
+              value.setInt(3);
+            }
+          },
+          child: Text(
+            text,
+            style: const TextStyle(
+              color: Colors.white,
+              fontFamily: 'geo',
+              fontSize: 30,
+              fontWeight: FontWeight.w900,
+              letterSpacing: 2,
+            ),
+          ),
+        );
       },
-      child: Text(
-        text,
-        style: const TextStyle(
-          color: Colors.white,
-          fontFamily: 'geo',
-          fontSize: 30,
-          fontWeight: FontWeight.w900,
-          letterSpacing: 2,
-        ),
-      ),
     );
   }
 

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:my_portfolio/presentation/pages/home_screen.dart';
+import 'package:my_portfolio/pages/home_screen.dart';
 import 'package:my_portfolio/provider/scroll_provider.dart';
 import 'package:provider/provider.dart';
 

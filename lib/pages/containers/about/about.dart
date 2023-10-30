@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:my_portfolio/presentation/pages/containers/about/about_desktop.dart';
-import 'package:my_portfolio/presentation/pages/containers/about/about_mobile.dart';
-import 'package:my_portfolio/presentation/pages/containers/about/about_tablet.dart';
+import 'package:my_portfolio/pages/containers/about/about_desktop.dart';
+import 'package:my_portfolio/pages/containers/about/about_mobile.dart';
+import 'package:my_portfolio/pages/containers/about/about_tablet.dart';
 import 'package:responsive_builder/responsive_builder.dart';
 
 class About extends StatelessWidget {

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:my_portfolio/presentation/pages/containers/work/work_desktop.dart';
-import 'package:my_portfolio/presentation/pages/containers/work/work_mobile.dart';
-import 'package:my_portfolio/presentation/pages/containers/work/work_tablet.dart';
+import 'package:my_portfolio/pages/containers/work/work_desktop.dart';
+import 'package:my_portfolio/pages/containers/work/work_mobile.dart';
+import 'package:my_portfolio/pages/containers/work/work_tablet.dart';
 import 'package:responsive_builder/responsive_builder.dart';
 
 class Work extends StatelessWidget {

@@ -3,19 +3,18 @@
 import 'dart:ui';
 
 import 'package:flutter/material.dart';
-import 'package:glassmorphism/glassmorphism.dart';
 import 'package:motion/motion.dart';
-import 'package:my_portfolio/presentation/utils/constants.dart';
+import 'package:my_portfolio/utils/constants.dart';
 import 'package:responsive_builder/responsive_builder.dart';
 
-class Container2 extends StatefulWidget {
-  const Container2({super.key});
+class SkillsContainer extends StatefulWidget {
+  const SkillsContainer({super.key});
 
   @override
-  State<Container2> createState() => _Container2State();
+  State<SkillsContainer> createState() => _SkillsContainerState();
 }
 
-class _Container2State extends State<Container2> {
+class _SkillsContainerState extends State<SkillsContainer> {
   double _verticalOffset = 0.0;
   bool _goingUp = true;
 
@@ -59,15 +58,15 @@ class _Container2State extends State<Container2> {
   @override
   Widget build(BuildContext context) {
     return ScreenTypeLayout.builder(
-      mobile: (BuildContext context) => mobileContainer2(),
-      tablet: (BuildContext context) => tabletContainer2(),
-      desktop: (BuildContext context) => deskContainer2(),
+      mobile: (BuildContext context) => mobileSkillsContainer(),
+      tablet: (BuildContext context) => tabletSkillsContainer(),
+      desktop: (BuildContext context) => deskSkillsContainer(),
     );
   }
 
 /*=============== MOBILE CONTAINER 2 ============*/
 
-  Widget mobileContainer2() {
+  Widget mobileSkillsContainer() {
     return Container(
       margin: const EdgeInsets.only(left: 60, right: 60, top: 30),
       child: Row(
@@ -403,7 +402,7 @@ class _Container2State extends State<Container2> {
 
 /*=========== TABLET CONTAINER 2 ===========*/
 
-  Widget tabletContainer2() {
+  Widget tabletSkillsContainer() {
     return Container(
       margin: const EdgeInsets.only(left: 90, right: 90, top: 40),
       child: Row(
@@ -757,7 +756,7 @@ class _Container2State extends State<Container2> {
   }
 
 /*====== DESKTOP CONTAINER 2 ========*/
-  Widget deskContainer2() {
+  Widget deskSkillsContainer() {
     return Container(
       margin: const EdgeInsets.only(left: 160, right: 160, top: 90),
       child: Row(

@@ -1,15 +1,15 @@
 import 'package:flutter/material.dart';
-import 'package:my_portfolio/presentation/utils/constants.dart';
-import 'package:my_portfolio/presentation/widgets/hover_card.dart';
+import 'package:my_portfolio/utils/constants.dart';
+import 'package:my_portfolio/widgets/hover_card.dart';
 
-class WorkTablet extends StatelessWidget {
-  const WorkTablet({super.key});
+class WorkDesktop extends StatelessWidget {
+  const WorkDesktop({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: const EdgeInsets.only(left: 90, right: 90, top: 40),
-      padding: const EdgeInsets.only(left: 24, right: 24),
+      margin: const EdgeInsets.only(left: 160, right: 160, top: 60),
+      padding: const EdgeInsets.only(left: 40, right: 40, top: 40),
       child: Column(
         children: [
           Text(
@@ -33,7 +33,7 @@ class WorkTablet extends StatelessWidget {
               color: Colors.white,
             ),
           ),
-          const SizedBox(height: 38),
+          const SizedBox(height: 48),
 
           // Project 1
           Row(
@@ -45,7 +45,7 @@ class WorkTablet extends StatelessWidget {
                   child: HoverCard(image: project1),
                 ),
               ),
-              const SizedBox(width: 28),
+              const SizedBox(width: 38),
               Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
@@ -82,13 +82,13 @@ class WorkTablet extends StatelessWidget {
                     icon: Image.asset(
                       github,
                       fit: BoxFit.fill,
-                      height: 20,
-                      width: 20,
+                      height: 28,
+                      width: 28,
                     ),
                     label: Text(
                       'Github',
                       style: TextStyle(
-                        height: 1,
+                        height: 2,
                         fontSize: w! / 64,
                         fontFamily: "geo",
                         fontWeight: FontWeight.w200,
@@ -101,83 +101,79 @@ class WorkTablet extends StatelessWidget {
             ],
           ),
           const SizedBox(
-            height: 24,
+            height: 32,
           ),
 
           // Project 2
-          // ignore: avoid_unnecessary_containers
-          Container(
-            child: Row(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
-                Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Text(
-                      'Pixel Perfect -Wallpaper App',
-                      textAlign: TextAlign.start,
-                      style: TextStyle(
-                        height: 1,
-                        fontSize: w! / 34,
-                        fontFamily: "geo",
-                        color: Colors.white,
-                        fontWeight: FontWeight.w400,
-                      ),
+          Row(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+              Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(
+                    'Pixel Perfect -Wallpaper App',
+                    textAlign: TextAlign.start,
+                    style: TextStyle(
+                      height: 1,
+                      fontSize: w! / 34,
+                      fontFamily: "geo",
+                      color: Colors.white,
+                      fontWeight: FontWeight.w400,
                     ),
-                    const SizedBox(height: 18),
-                    Text(
-                      'The Pixel Perfect App is a stunning and feature-rich  \nmobile application developed using the Flutter \nframework and Dart programming language.',
-                      textAlign: TextAlign.start,
-                      style: TextStyle(
-                        height: 1.2,
-                        fontSize: w! / 60,
-                        fontFamily: "gfs_neohellenic",
-                        color: Colors.white,
-                      ),
-                    ),
-                    const SizedBox(height: 18),
-                    ElevatedButton.icon(
-                      style: ElevatedButton.styleFrom(
-                        backgroundColor:
-                            const Color.fromARGB(28, 255, 255, 255),
-                        shape: RoundedRectangleBorder(
-                          side: const BorderSide(color: Colors.white),
-                          borderRadius: BorderRadius.circular(8),
-                        ),
-                      ),
-                      onPressed: () {},
-                      icon: Image.asset(
-                        github,
-                        fit: BoxFit.fill,
-                        height: 20,
-                        width: 20,
-                      ),
-                      label: Text(
-                        'Github',
-                        style: TextStyle(
-                          height: 1,
-                          fontSize: w! / 64,
-                          fontFamily: "geo",
-                          fontWeight: FontWeight.w200,
-                          color: const Color.fromARGB(255, 255, 255, 255),
-                        ),
-                      ),
-                    )
-                  ],
-                ),
-                const SizedBox(width: 28),
-                Expanded(
-                  child: Container(
-                    alignment: Alignment.topRight,
-                    child: const HoverCard(image: project2),
                   ),
+                  const SizedBox(height: 18),
+                  Text(
+                    'The Pixel Perfect App is a stunning and feature-rich  \nmobile application developed using the Flutter \nframework and Dart programming language.',
+                    textAlign: TextAlign.start,
+                    style: TextStyle(
+                      height: 1.2,
+                      fontSize: w! / 60,
+                      fontFamily: "gfs_neohellenic",
+                      color: Colors.white,
+                    ),
+                  ),
+                  const SizedBox(height: 18),
+                  ElevatedButton.icon(
+                    style: ElevatedButton.styleFrom(
+                      backgroundColor: const Color.fromARGB(28, 255, 255, 255),
+                      shape: RoundedRectangleBorder(
+                        side: const BorderSide(color: Colors.white),
+                        borderRadius: BorderRadius.circular(8),
+                      ),
+                    ),
+                    onPressed: () {},
+                    icon: Image.asset(
+                      github,
+                      fit: BoxFit.fill,
+                      height: 28,
+                      width: 28,
+                    ),
+                    label: Text(
+                      'Github',
+                      style: TextStyle(
+                        height: 2,
+                        fontSize: w! / 64,
+                        fontFamily: "geo",
+                        fontWeight: FontWeight.w200,
+                        color: const Color.fromARGB(255, 255, 255, 255),
+                      ),
+                    ),
+                  )
+                ],
+              ),
+              const SizedBox(width: 38),
+              Expanded(
+                child: Container(
+                  alignment: Alignment.topRight,
+                  child: const HoverCard(image: project2),
                 ),
-              ],
-            ),
+              ),
+            ],
           ),
           const SizedBox(
-            height: 24,
+            height: 32,
           ),
 
           // Project 3
@@ -190,7 +186,7 @@ class WorkTablet extends StatelessWidget {
                   child: HoverCard(image: project3),
                 ),
               ),
-              const SizedBox(width: 28),
+              const SizedBox(width: 38),
               Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
@@ -227,20 +223,20 @@ class WorkTablet extends StatelessWidget {
                     icon: Image.asset(
                       github,
                       fit: BoxFit.fill,
-                      height: 20,
-                      width: 20,
+                      height: 28,
+                      width: 28,
                     ),
                     label: Text(
                       'Github',
                       style: TextStyle(
-                        height: 1,
+                        height: 2,
                         fontSize: w! / 64,
                         fontFamily: "geo",
                         fontWeight: FontWeight.w200,
                         color: const Color.fromARGB(255, 255, 255, 255),
                       ),
                     ),
-                  ),
+                  )
                 ],
               ),
             ],
