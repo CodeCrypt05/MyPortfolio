@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 class OnHover extends StatefulWidget {
   final String title;
-  const OnHover({super.key, required this.title, required Text child});
+  const OnHover({super.key, required this.title});
 
   @override
   State<OnHover> createState() => _OnHoverState();

@@ -1,9 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:my_portfolio/functions/launch_url.dart';
 import 'package:my_portfolio/utils/constants.dart';
 import 'package:my_portfolio/widgets/hover_card.dart';
 
 class WorkDesktop extends StatelessWidget {
-  const WorkDesktop({super.key});
+  WorkDesktop({super.key});
+
+  final LaunchURL url = LaunchURL();
 
   @override
   Widget build(BuildContext context) {
@@ -78,7 +81,9 @@ class WorkDesktop extends StatelessWidget {
                         borderRadius: BorderRadius.circular(8),
                       ),
                     ),
-                    onPressed: () {},
+                    onPressed: () {
+                      url.launchURL(Uri.parse(chatAppProject));
+                    },
                     icon: Image.asset(
                       github,
                       fit: BoxFit.fill,
@@ -143,7 +148,9 @@ class WorkDesktop extends StatelessWidget {
                         borderRadius: BorderRadius.circular(8),
                       ),
                     ),
-                    onPressed: () {},
+                    onPressed: () {
+                      url.launchURL(Uri.parse(wallpaerAppProject));
+                    },
                     icon: Image.asset(
                       github,
                       fit: BoxFit.fill,
@@ -219,7 +226,9 @@ class WorkDesktop extends StatelessWidget {
                         borderRadius: BorderRadius.circular(8),
                       ),
                     ),
-                    onPressed: () {},
+                    onPressed: () {
+                      url.launchURL(Uri.parse(healthAppProject));
+                    },
                     icon: Image.asset(
                       github,
                       fit: BoxFit.fill,
@@ -245,7 +254,9 @@ class WorkDesktop extends StatelessWidget {
             height: 28,
           ),
           GestureDetector(
-            onTap: () {},
+            onTap: () {
+              url.launchURL(Uri.parse(githubURL));
+            },
             child: Text(
               'MORE >>',
               style: TextStyle(

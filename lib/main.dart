@@ -3,7 +3,7 @@ import 'package:my_portfolio/pages/home_screen.dart';
 import 'package:my_portfolio/provider/scroll_provider.dart';
 import 'package:provider/provider.dart';
 
-void main() {
+void main() async {
   runApp(const MyApp());
 }
 

@@ -12,7 +12,7 @@ class Work extends StatelessWidget {
     return ScreenTypeLayout.builder(
       mobile: (BuildContext context) => const WorkMobile(),
       tablet: (BuildContext context) => const WorkTablet(),
-      desktop: (BuildContext context) => const WorkDesktop(),
+      desktop: (BuildContext context) => WorkDesktop(),
     );
   }
 }

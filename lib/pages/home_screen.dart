@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:my_portfolio/pages/containers/about/about.dart';
 import 'package:my_portfolio/pages/containers/contact/contact.dart';
-import 'package:my_portfolio/pages/containers/home_container.dart';
-import 'package:my_portfolio/pages/containers/skills_container.dart';
+import 'package:my_portfolio/pages/containers/home/home_container.dart';
+import 'package:my_portfolio/pages/containers/skills/skills_container.dart';
 import 'package:my_portfolio/pages/containers/work/work.dart';
 import 'package:my_portfolio/utils/constants.dart';
 import 'package:my_portfolio/widgets/navbar.dart';

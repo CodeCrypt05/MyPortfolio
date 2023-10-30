@@ -10,9 +10,9 @@ class About extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ScreenTypeLayout.builder(
-      mobile: (BuildContext context) => const AboutMobile(),
-      tablet: (BuildContext context) => const AboutTablet(),
-      desktop: (BuildContext context) => const AboutDesktop(),
+      mobile: (BuildContext context) => AboutMobile(),
+      tablet: (BuildContext context) => AboutTablet(),
+      desktop: (BuildContext context) => AboutDesktop(),
     );
   }
 }

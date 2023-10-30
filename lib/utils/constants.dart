@@ -50,3 +50,19 @@ const String first_para =
 
 const String sec_para =
     ''' I hold a Bachelor's degree in Computer Engineering, and my aspirations in this field are boundless. As a newcomer, I'm open to exciting job opportunities, connections with industry experts, and, most importantly, I'm here to learn, grow, and explore career opportunities in this exciting field. Don't hesitate to reach out and connect with me; I'm approachable and eager to contribute to the ever-expanding world of Flutter development. Rest assured, I'm here to learn and grow, and I'm definitely open to saying hello!''';
+
+// Launch Url
+
+const String chatAppProject = "https://github.com/CodeCrypt05/ChatApp";
+const String wallpaerAppProject =
+    "https://github.com/CodeCrypt05/Pixel-Perfect-Wallpaper-App";
+const String healthAppProject =
+    "https://github.com/CodeCrypt05/health_checkup_app";
+
+const String githubURL = "https://github.com/CodeCrypt05";
+const String instagramURL = "https://www.instagram.com/coolbeans9069/";
+const String linkdinURL =
+    "https://www.linkedin.com/in/vaibhav-waghre-a485081a3/";
+
+const String resumedownload =
+    'https://drive.google.com/uc?export=download&id=1l63BXwnJi3hbQONw_UzGfpe76qBSP1yZ';

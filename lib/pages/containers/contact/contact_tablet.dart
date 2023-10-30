@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:my_portfolio/functions/launch_url.dart';
 import 'package:my_portfolio/utils/constants.dart';
 
 class ContactTablet extends StatelessWidget {
-  const ContactTablet({super.key});
+  ContactTablet({super.key});
+  final LaunchURL url = LaunchURL();
 
   @override
   Widget build(BuildContext context) {
@@ -60,25 +62,40 @@ class ContactTablet extends StatelessWidget {
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Image.asset(
-                    github,
-                    fit: BoxFit.fill,
-                    height: 30,
-                    width: 30,
+                  InkWell(
+                    onTap: () {
+                      url.launchURL(Uri.parse(githubURL));
+                    },
+                    child: Image.asset(
+                      github,
+                      fit: BoxFit.fill,
+                      height: 30,
+                      width: 30,
+                    ),
                   ),
                   const SizedBox(width: 18),
-                  Image.asset(
-                    instagra_ic,
-                    fit: BoxFit.fill,
-                    height: 24,
-                    width: 24,
+                  InkWell(
+                    onTap: () {
+                      url.launchURL(Uri.parse(instagramURL));
+                    },
+                    child: Image.asset(
+                      instagra_ic,
+                      fit: BoxFit.fill,
+                      height: 24,
+                      width: 24,
+                    ),
                   ),
                   const SizedBox(width: 18),
-                  Image.asset(
-                    linkdin_ic,
-                    fit: BoxFit.fill,
-                    height: 24,
-                    width: 24,
+                  InkWell(
+                    onTap: () {
+                      url.launchURL(Uri.parse(linkdinURL));
+                    },
+                    child: Image.asset(
+                      linkdin_ic,
+                      fit: BoxFit.fill,
+                      height: 24,
+                      width: 24,
+                    ),
                   ),
                 ],
               ),

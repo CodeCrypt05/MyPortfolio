@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:my_portfolio/functions/launch_url.dart';
 import 'package:my_portfolio/utils/constants.dart';
 
 class AboutDesktop extends StatelessWidget {
-  const AboutDesktop({super.key});
+  AboutDesktop({super.key});
+
+  final LaunchURL url = LaunchURL();
 
   @override
   Widget build(BuildContext context) {
@@ -78,7 +81,9 @@ class AboutDesktop extends StatelessWidget {
                 borderRadius: BorderRadius.circular(8),
               ),
             ),
-            onPressed: () {},
+            onPressed: () {
+              url.launchURL(Uri.parse(resumedownload));
+            },
             child: Row(
               mainAxisSize: MainAxisSize.min,
               children: [
