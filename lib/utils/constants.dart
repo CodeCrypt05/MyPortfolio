@@ -10,8 +10,8 @@ const cardBorderRadius = BorderRadius.all(Radius.circular(24));
 /* Images */
 
 const String logo = 'assets/images/main_logo.png';
-const String astronout_earth_illustration = 'assets/images/main_poster_img.png';
-const String astronaut_dab_illustration = 'assets/images/astronaut_dab_img.png';
+const String astronout_earth_illustration = 'assets/gif/main_astro.gif';
+const String astronaut_dab_illustration = 'assets/gif/dab_astro.gif';
 const String background_star_img = 'assets/images/background_1.png';
 const String bottom_nav_astro = "assets/images/bottom_nav_astronaut.png";
 const String mobile_bottom_nav_stro =

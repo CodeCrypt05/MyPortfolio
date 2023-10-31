@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:my_portfolio/pages/containers/about/about.dart';
 import 'package:my_portfolio/pages/containers/contact/contact.dart';
-import 'package:my_portfolio/pages/containers/home/home_container.dart';
+import 'package:my_portfolio/pages/containers/home/home.dart';
 import 'package:my_portfolio/pages/containers/skills/skills_container.dart';
 import 'package:my_portfolio/pages/containers/work/work.dart';
 import 'package:my_portfolio/utils/constants.dart';
@@ -92,7 +92,7 @@ class _HomeScreenState extends State<HomeScreen> {
           child: Column(
             children: [
               const NavBar(),
-              HomeContainer(key: container1Key),
+              Home(key: container1Key),
               SkillsContainer(key: container2Key),
               Work(key: workKey),
               About(key: aboutKey),

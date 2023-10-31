@@ -90,6 +90,8 @@ flutter:
     - assets/images/linkdin_ic.png
 
     - assets/images/star.jpg
+    - assets/gif/dab_astro.gif
+    - assets/gif/main_astro.gif
 
 
     - assets/programming_icons/adobexd.png

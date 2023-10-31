@@ -762,20 +762,32 @@ class _SkillsContainerState extends State<SkillsContainer> {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
+          // Expanded(
+          //   child: AnimatedContainer(
+          //     duration: const Duration(
+          //         milliseconds: 200), // Adjust this duration as needed.
+          //     transform: Matrix4.translationValues(0.0, _verticalOffset, 0.0),
+          //     child: Container(
+          //       height: 440,
+          //       decoration: const BoxDecoration(
+          //         // color: Colors.amber,
+          //         image: DecorationImage(
+          //             alignment: Alignment.centerLeft,
+          //             image: AssetImage(astronaut_dab_illustration),
+          //             fit: BoxFit.contain),
+          //       ),
+          //     ),
+          //   ),
+          // ),
           Expanded(
-            child: AnimatedContainer(
-              duration: const Duration(
-                  milliseconds: 200), // Adjust this duration as needed.
-              transform: Matrix4.translationValues(0.0, _verticalOffset, 0.0),
-              child: Container(
-                height: 440,
-                decoration: const BoxDecoration(
-                  // color: Colors.amber,
-                  image: DecorationImage(
-                      alignment: Alignment.centerLeft,
-                      image: AssetImage(astronaut_dab_illustration),
-                      fit: BoxFit.contain),
-                ),
+            child: Container(
+              height: 500,
+              decoration: const BoxDecoration(
+                // color: Colors.amber,
+                image: DecorationImage(
+                    alignment: Alignment.centerLeft,
+                    image: AssetImage(astronaut_dab_illustration),
+                    fit: BoxFit.contain),
               ),
             ),
           ),
