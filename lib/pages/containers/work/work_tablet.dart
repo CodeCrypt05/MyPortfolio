@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:my_portfolio/functions/launch_url.dart';
 import 'package:my_portfolio/utils/constants.dart';
 import 'package:my_portfolio/widgets/hover_card.dart';
+import 'package:my_portfolio/widgets/neon_button.dart';
 
 class WorkTablet extends StatelessWidget {
   WorkTablet({super.key});
@@ -261,14 +262,7 @@ class WorkTablet extends StatelessWidget {
             onTap: () {
               url.launchURL(Uri.parse(githubURL));
             },
-            child: Text(
-              'MORE >>',
-              style: TextStyle(
-                color: Colors.white,
-                fontSize: w! / 48,
-                fontFamily: "geo",
-              ),
-            ),
+            child: NeonButton(text: 'MORE >>'),
           ),
           const SizedBox(
             height: 68,

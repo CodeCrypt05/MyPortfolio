@@ -3,6 +3,8 @@
 import 'package:flutter/material.dart';
 import 'package:my_portfolio/utils/constants.dart';
 import 'package:my_portfolio/provider/scroll_provider.dart';
+import 'package:my_portfolio/widgets/neon_button.dart';
+import 'package:my_portfolio/widgets/on_hover.dart';
 import 'package:provider/provider.dart';
 
 import 'package:responsive_builder/responsive_builder.dart';
@@ -137,16 +139,7 @@ class _NavBarState extends State<NavBar> {
               value.setInt(3);
             }
           },
-          child: Text(
-            text,
-            style: const TextStyle(
-              color: Colors.white,
-              fontFamily: 'geo',
-              fontSize: 24,
-              fontWeight: FontWeight.w900,
-              letterSpacing: 0.8,
-            ),
-          ),
+          child: NeonButton(text: text),
         );
       },
     );
@@ -207,16 +200,7 @@ class _NavBarState extends State<NavBar> {
               value.setInt(3);
             }
           },
-          child: Text(
-            text,
-            style: const TextStyle(
-              color: Colors.white,
-              fontFamily: 'geo',
-              fontSize: 30,
-              fontWeight: FontWeight.w900,
-              letterSpacing: 2,
-            ),
-          ),
+          child: NeonButton(text: text),
         );
       },
     );

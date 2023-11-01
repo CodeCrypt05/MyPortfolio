@@ -8,7 +8,7 @@ class HomeMobile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: const EdgeInsets.only(left: 60, right: 60, top: 10),
+      margin: const EdgeInsets.only(left: 60, right: 60, top: 4),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
@@ -123,7 +123,6 @@ class HomeMobile extends StatelessWidget {
               ),
             ],
           ),
-          const SizedBox(height: 16),
           Container(
             height: 400,
             decoration: const BoxDecoration(
