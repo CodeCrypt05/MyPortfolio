@@ -4,7 +4,11 @@ This project is designed to help you create a beautiful and interactive portfoli
 
 ## Live Demo
 
-You can explore the live version of the website [Click to see live demo](https://myportfolio-8e646.web.app/).
+You can explore the live version of the website [Click to see live demo](https://myportfolio-ddd39.web.app/).
+
+## Screenshots
+
+<img src = "https://github.com/CodeCrypt05/MyPortfolio/assets/61696855/83d37c9d-71cb-4a94-82f7-64675489ad75.png" width="800" height = "400" >
 
 ## Table of Contents
 
